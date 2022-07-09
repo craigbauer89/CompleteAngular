@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "craigbauer89@gmail.com",
+      "password": "$2a$10$xVxPqhyGtxCI5h8nyi4T0.x08b6FV5slCttDt8kIgwi4x.BZF20r6",
+      "firstname": "craig",
+      "lastname": "bauer",
+      "id": 1
+    },
+    {
+      "email": "j@smith.com",
+      "password": "$2a$10$A9Tfaiz8tMSwSyqQwPuPG.SWCVAfo94L2.ciaCHKYGmln4VJqFKOG",
+      "firstname": "jim",
+      "lastname": "smith",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<h1>Register</h1>
+ <form #f="ngForm" (ngSubmit)="onSubmit()">
+<input type="text"ngModel name="firstname"  placeholder="Insert name">
+<input type="text" ngModel name="lastname" placeholder="Insert lastname">
+<input type="email" ngModel name="email" placeholder="Insert email">
+<input type="password" ngModel name="password" placeholder="Insert password">
+<button type="submit" >Submit</button>
+</form> 
+ <div class="alert alert-danger" role="alert" *ngIf="error">
+  {{error}}
+</div>
+
+
+
+
+    
+ 
+  
+  
