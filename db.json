@@ -27,6 +27,13 @@
       "firstname": "Aaron",
       "lastname": "Rogers",
       "id": 4
+    },
+    {
+      "email": "m@rossi.com",
+      "password": "$2a$10$CRozGQZq3fJeZK5rz1nO5.nWXjPse.4vR6OmMgZFKC4/3ZXi/hpVi",
+      "firstname": "Mario",
+      "lastname": "Rossi",
+      "id": 5
     }
   ]
 }

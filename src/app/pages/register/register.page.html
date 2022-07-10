@@ -12,7 +12,8 @@
 
 
 <h1>Register</h1>
-<form #f="ngForm" (ngSubmit)="onSubmit()">
+<form class="register" #f="ngForm" (ngSubmit)="onSubmit()">
+  <section>
   <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
     <input matInput type="text"ngModel name="firstname"  placeholder="Insert name">
@@ -29,16 +30,18 @@
     <mat-label>Password</mat-label>
     <input matInput type="password" ngModel name="password" placeholder="Insert password">
   </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Select Watch to Sell</mat-label>
+    <mat-select>
+      <mat-option value="one">Festina</mat-option>
+      <mat-option value="two">Zeneth</mat-option>
+      <mat-option value="two">Rider</mat-option>
+    </mat-select>
+  </mat-form-field>
   <button mat-button color="accent" type="submit" style="width : 10em; height: 3em;">Submit</button>
+</section>
 </form>
-<mat-form-field appearance="fill">
-  <mat-label>Select Product Picture</mat-label>
-  <mat-select>
-    <mat-option value="one">Festina</mat-option>
-    <mat-option value="two">Zeneth</mat-option>
-    <mat-option value="two">Rider</mat-option>
-  </mat-select>
-</mat-form-field>
+
 <div class="alert alert-danger" role="alert" *ngIf="error">
   {{error}}
 </div>
