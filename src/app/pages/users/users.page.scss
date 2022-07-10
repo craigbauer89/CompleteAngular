@@ -4,6 +4,7 @@ body {
 }
 
 .users {
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -12,5 +13,6 @@ body {
 
 .users div{
     margin-top: 10px;
+    
     
 }

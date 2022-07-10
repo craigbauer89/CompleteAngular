@@ -1,11 +1,24 @@
 body {
     background-color: lightgrey ;
-    height:100% ;
+    
 }
 
 .products {
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: lightgrey ;
+    
+}
+
+.products div{
+    margin-top: 10px;
+    
+}
+
+mat-card {
+    background-color: black;
+    color: white;
+  
 }

@@ -9,7 +9,7 @@
 </div> -->
 
 
-
+<body>
 
 <h1>Login</h1>
 
@@ -31,12 +31,13 @@
         
         <button mat-button color="accent" type="submit" style="width : 10em; height: 3em;">Submit</button>
       </div>
+      <div class="alert alert-danger" role="alert" *ngIf="error">
+        {{error}}
+      </div>
   </section>
   </form>
-<div class="alert alert-danger" role="alert" *ngIf="error">
-  {{error}}
-</div>
 
+</body>
 
 
 

@@ -1,18 +1,22 @@
-div {
-    margin: 0 25%;
-    width: 50%;
-    margin-top: 10%;
+body {
+    background: url(../../../assets/img/waiting2.jpg);
     
 }
 
+
 button {
-    margin: 0 25%;
+    margin: 10% 25%;
     width: 50%;
-    margin-top: 10%;
+    height: 50px;
+    font-size: 1.5rem;
+    
     
 }
 
 p {
+   
    text-align: center;
-   font-size: 2rem;
+   font-size: 3rem;
+   color: black;
+   font-weight: 600;
 }

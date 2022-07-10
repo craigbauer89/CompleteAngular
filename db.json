@@ -34,6 +34,13 @@
       "firstname": "Mario",
       "lastname": "Rossi",
       "id": 5
+    },
+    {
+      "email": "b@mauri.com",
+      "password": "$2a$10$oySNn.008dX2bh9N5wOjVuFfc6yidYhz8Z.H.3AbOlNQrZuaLt.m.",
+      "firstname": "Benedetta",
+      "lastname": "Mauri",
+      "id": 6
     }
   ]
 }
