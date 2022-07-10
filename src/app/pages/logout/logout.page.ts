@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from '../users.service';
 
 @Component({
   templateUrl: './logout.page.html',
@@ -6,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoutPage implements OnInit {
 
-  constructor() { }
+  constructor(private userService: UsersService) { }
 
   ngOnInit(): void {
+  }
+
+  logout() {
+    this.userService.logout();
   }
 
 }

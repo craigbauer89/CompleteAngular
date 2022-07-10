@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './pages/auth.guard';
 import { HomePage } from './pages/home/home.page';
 import { LoginPage } from './pages/login/login.page';
 import { LogoutPage } from './pages/logout/logout.page';
@@ -13,12 +14,19 @@ const routes: Routes = [
     component: HomePage,
   },
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
+  },
+  {
     path: 'users',
+    canActivate: [AuthGuard],
     component: UsersPage
 
   },
   {
     path: 'products',
+    canActivate: [AuthGuard],
     component: ProductsPage
   },
   {
@@ -32,7 +40,13 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterPage
+  },
+  {
+    path: '**',
+    /* component: ErrPage */
+    loadChildren: () => import('./error404/error404.module').then(m => m.Error404Module)
   }
+  
 
 
 ];

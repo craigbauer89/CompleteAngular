@@ -1,4 +1,4 @@
-<h1>Login Page</h1>
+<!-- <h1>Login Page</h1>
 <form #f="ngForm" (ngSubmit)="onSubmit()">
 <input type="email" ngModel name="email" placeholder="Insert email">
 <input type="password"ngModel name="password" placeholder="Insert password">
@@ -6,7 +6,29 @@
 </form>
 <div class="alert alert-danger" role="alert" *ngIf="error">
   {{error}}
+</div> -->
+
+
+
+
+<h1>Login</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" ngModel name="email" placeholder="Insert email">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput type="password"ngModel name="password" placeholder="Insert password">
+  </mat-form-field>
+  <button mat-button color="accent" type="submit" style="width : 10em; height: 3em;">Submit</button>
+</form>
+<div class="alert alert-danger" role="alert" *ngIf="error">
+  {{error}}
 </div>
+
+
+
 
 
 

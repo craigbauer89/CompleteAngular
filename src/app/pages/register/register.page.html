@@ -1,4 +1,4 @@
-<h1>Register</h1>
+<!-- <h1>Register</h1>
  <form #f="ngForm" (ngSubmit)="onSubmit()">
 <input type="text"ngModel name="firstname"  placeholder="Insert name">
 <input type="text" ngModel name="lastname" placeholder="Insert lastname">
@@ -8,8 +8,40 @@
 </form> 
  <div class="alert alert-danger" role="alert" *ngIf="error">
   {{error}}
-</div>
+</div> -->
 
+
+<h1>Register</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput type="text"ngModel name="firstname"  placeholder="Insert name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Lastname</mat-label>
+    <input matInput type="text" ngModel name="lastname" placeholder="Insert lastname">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" ngModel name="email" placeholder="Insert email">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" ngModel name="password" placeholder="Insert password">
+  </mat-form-field>
+  <button mat-button color="accent" type="submit" style="width : 10em; height: 3em;">Submit</button>
+</form>
+<mat-form-field appearance="fill">
+  <mat-label>Select Product Picture</mat-label>
+  <mat-select>
+    <mat-option value="one">Festina</mat-option>
+    <mat-option value="two">Zeneth</mat-option>
+    <mat-option value="two">Rider</mat-option>
+  </mat-select>
+</mat-form-field>
+<div class="alert alert-danger" role="alert" *ngIf="error">
+  {{error}}
+</div>
 
 
 

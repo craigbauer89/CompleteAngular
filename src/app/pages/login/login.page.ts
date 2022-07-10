@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService } from '../users.service';
+import {FormBuilder, FormControl, Validators} from '@angular/forms';
 
 @Component({
   templateUrl: './login.page.html',
@@ -33,5 +34,7 @@ export class LoginPage implements OnInit {
       }
     )
   }
+
+  
 
 }

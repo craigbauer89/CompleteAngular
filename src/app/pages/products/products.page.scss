@@ -1,0 +1,11 @@
+body {
+    background-color: lightgrey ;
+    height:100% ;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: lightgrey ;
+}

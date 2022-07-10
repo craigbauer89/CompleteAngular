@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RegisterPage } from './register/register.page';
 import { LoginPage } from './login/login.page';
 import { HomePage } from './home/home.page';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -17,7 +18,8 @@ import { HomePage } from './home/home.page';
   imports: [
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ]
 })
 export class RegisteruserModule { }

@@ -12,6 +12,13 @@ import { LogoutPage } from './pages/logout/logout.page';
 import { RegisterPage } from './pages/register/register.page';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { MatSliderModule } from '@angular/material/slider';
+// import { MatSidenavModule} from '@angular/material/sidenav';
+// import { MatSidenavContent } from './material/material.module';
+
+import {MaterialModule} from './material/material.module'
+import { MatSidenavContent } from '@angular/material/sidenav';
 
 
 
@@ -24,13 +31,23 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsPage,
     LoginPage,
     LogoutPage,
-    RegisterPage
+    RegisterPage,
+    
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    // MatSliderModule,
+    // MatSidenavModule,
+    MaterialModule
+   
+    
+  
    
     
   ],

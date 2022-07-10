@@ -13,6 +13,20 @@
       "firstname": "jim",
       "lastname": "smith",
       "id": 2
+    },
+    {
+      "email": "a@white.com",
+      "password": "$2a$10$iydPwen9SLG0oBD37/cdhOZVyRXshkPCYpy0xVyt/9ZtFTNssdBg.",
+      "firstname": "Anto",
+      "lastname": "White",
+      "id": 3
+    },
+    {
+      "email": "a@rogers.com",
+      "password": "$2a$10$DIWm.OASL0eGED2wpplWNelzZmmu8zGBIA4g9yPblCfpy5RYq69ja",
+      "firstname": "Aaron",
+      "lastname": "Rogers",
+      "id": 4
     }
   ]
 }
